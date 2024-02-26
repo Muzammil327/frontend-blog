@@ -11,7 +11,7 @@ export default function RightPostCatgeory() {
   ];
 
   return (
-    <div className="rightpost">
+    <div className="rightpost mt-5">
       <div className="title">
         <h3>CATEGORIES</h3>
       </div>

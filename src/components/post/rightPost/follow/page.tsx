@@ -4,7 +4,7 @@ import { FaFacebook, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 
 export default function RightPostFollow() {
   return (
-    <div className="rightpost">
+    <div className="rightpost mt-6">
       <div className="title">
         <h3>Follow Us</h3>
       </div>

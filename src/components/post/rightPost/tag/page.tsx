@@ -9,7 +9,7 @@ export default function RightPostTag() {
     ...new Set(postMetadata.map((item) => item.tagslug)),
   ];
   return (
-    <div className="rightpost">
+    <div className="rightpost mt-5">
       <div className="title">
         <h3>Tags</h3>
       </div>

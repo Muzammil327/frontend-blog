@@ -49,10 +49,10 @@
 
                 .copyright {
                     span {
-                        @apply text-white md:text-base text-sm;
+                        @apply text-white md:text-base text-sm text-center;
 
                         a {
-                            @apply text-white hover:t2 pl-1;
+                            @apply text-white hover:t2 pl-1 sm:text-base text-sm;
                         }
                     }
                 }
