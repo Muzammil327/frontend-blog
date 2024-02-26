@@ -72,11 +72,12 @@ export default function RootLayout({
         <meta property="twitter:domain" content="muzblogs.vercel.app" />
         <meta
           name="ahrefs-site-verification"
-          content="234939215ab82c4e0069a4dfb6f90dcda6f5777af678e3dffac7654efdddbf42"
+          content="95f3550772b63229279ca631721b0e1043947f6997958c0d956af12e0b96ddb7"
         ></meta>
+
         <meta
           name="google-site-verification"
-          content="TLC1ScjuJKnpeLltQJOI6Xu0QwitVD-gOYWCfoQarwo"
+          content="0YpJh4QI1icQpfh1Y1WD9teVKzb6OoAvExQtMRRyoHk"
         />
       </head>
       <body className={inter.className}>
