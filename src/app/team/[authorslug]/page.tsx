@@ -19,7 +19,7 @@ function Page({ params }: { params: { authorslug: string } }) {
       <Hero title={params.authorslug} />
 
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-3 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-16 ">
           {postMetadata
             .filter((post) => post.authorslug === params.authorslug)
             .map((data: PostCard) => (

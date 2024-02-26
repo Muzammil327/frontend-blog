@@ -1,16 +1,38 @@
 import Hero from "@/src/components/hero/page";
 import Container from "@/src/components/elements/container/page";
+import Image from "next/image";
+import React from "react";
+import type { Metadata } from "next";
 
+const data = {
+  title: "Our Newsletter || MuzBlogs",
+  description:
+    "MuzBlogs provides programming solutions, tips, and latest techniques to optimize your code and tackle common coding challenges.",
+  canonical: "/newsletter",
+  index: true,
+  follow: true,
+  image: "/opengraph-image.jpg",
+  url: "https://muzblogs.vercel.app/newsletter",
+  keywords: [
+    "newsletter",
+    "muzblogs newsletter",
+    "blog with muzammil newsletter",
+    "muzammil blog newsletter",
+    "muzammil with blog newsletter",
+  ],
+};
 export default function Page() {
   return (
     <>
       <Hero title="Our Newsletter" />
-      <Container>
+      {/* <Container>
         <div className="newsletter">
-          <img
+          <Image
             className="img-head py-5"
-            src="https://raw.githubusercontent.com/emnatkins/cdn-codepen/main/LYJWgdK/LYJWgdK.mail.jpg"
+            src="/NEWSLETTER.jpg"
             alt="subscribe to email"
+            height={500}
+            width={500}
           />
           <h1 className="uppercase font-bold lg:text-3xl sm:text-2xl text-xl py-4">
             subscribe
@@ -42,7 +64,43 @@ export default function Page() {
             </button>
           </div>
         </div>
-      </Container>
+      </Container> */}
     </>
   );
 }
+
+export const metadata: Metadata = {
+  title: data.title,
+  description: data.description,
+  keywords: data.keywords,
+  openGraph: {
+    title: data.title,
+    description: data.description,
+    url: data.url,
+    images: [
+      {
+        url: data.image,
+        alt: data.title,
+      },
+    ],
+  },
+  alternates: {
+    canonical: data.canonical,
+  },
+  robots: {
+    index: data.index,
+    follow: data.follow,
+    googleBot: {
+      index: data.index,
+      follow: data.follow,
+    },
+  },
+  twitter: {
+    title: data.title,
+    description: data.description,
+    images: {
+      url: data.image,
+      alt: data.title,
+    },
+  },
+};

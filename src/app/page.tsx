@@ -10,7 +10,7 @@ const data = {
   index: true,
   follow: true,
   image: "/opengraph-image.jpg",
-  url: "https://www.mindbenderquiz.com/",
+  url: "https://muzblogs.vercel.app/",
   keywords: [
     "muzblogs",
     "blog with muzammil",

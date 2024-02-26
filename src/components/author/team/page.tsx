@@ -58,7 +58,7 @@ export const TeamData: Team[] = [
     id: 2,
     title: "Imran Safdar",
     image: "/team/imran.jpg",
-    slug: "/",
+    slug: "/imran",
     para: "Robotics Engineering",
   },
   {

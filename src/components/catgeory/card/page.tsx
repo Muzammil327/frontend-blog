@@ -1,11 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
-import Hero from "@/src/components/hero/page";
-import PostMetadata from "@/src/components/post/PostMetadata/page";
+import PostMetadata from "../../post/PostMetadata/page";
 import Container from "@/src/components/elements/container/page";
+import ImageComponent from "../../elements/ImageComponent/page";
 
-export default function CatCard() {
+export default function CatgeoryCard() {
   const postMetadata = PostMetadata();
   const uniqueCategories = [...new Set(postMetadata.map((item) => item.cat))];
 
@@ -19,32 +18,30 @@ export default function CatCard() {
 
   const categoryContent: CategoryContent = {
     download: (
-      <Image
-        src="https://images.pexels.com/photos/617967/pexels-photo-617967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-        alt=""
-        height={400}
-        width={400}
-        className="max-w-full"
+      <ImageComponent
+        src="/h.png"
+        alt="download blog post"
+        height={360}
+        width={640}
       />
     ),
     fashion: (
-      <Image
-        src="https://images.pexels.com/photos/617967/pexels-photo-617967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-        alt=""
-        height={400}
-        width={400}
-        className="max-w-full"
+      <ImageComponent
+        src="/h.png"
+        alt="download blog post"
+        height={360}
+        width={640}
       />
     ),
   };
   return (
     <Container>
-      <div className="catcard">
+      <div className="catgeorycard my-16">
         {uniqueCategories.map((category, index) => (
-          <div className="catcard-inner" key={category}>
+          <div className="inner" key={category}>
             <div className="img">
-              <div>{categoryContent[category] || <p>Default content</p>}</div>
-              <div className="shape-divider-bottom">
+              <span>{categoryContent[category] || <p>Default content</p>}</span>
+              <div className="shape-divider">
                 <svg
                   data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +63,7 @@ export default function CatCard() {
               <h2>{category}</h2>
             </div>
             <Link href={`/catgeory/${uniqueCategoriesSlug[index]}`}>
-              <span >
+              <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"

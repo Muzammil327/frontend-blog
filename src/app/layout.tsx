@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "MuzBlogs",
     description: "MuzBlogs",
   },
-  metadataBase: new URL("https://www.codebloglab.website"),
+  metadataBase: new URL("https://muzblogs.vercel.app"),
   twitter: {
     title: "MuzBlogs",
     description: "The React Framework for the Web",
@@ -30,16 +30,16 @@ export default function RootLayout({
       <head>
         <meta name="application-name" content="Next.js" />
         <meta name="author" content="Muhammad Muzammil Safdar" />
-        <link rel="author" href="https://codebloglab.website/" />
+        <link rel="author" href="https://muzblogs.vercel.app/" />
         <meta name="generator" content="Next.js" />
         <meta name="keywords" content="Next.js,React,JavaScript" />
         <meta name="referrer" content="origin-when-cross-origin" />
         <meta name="color-scheme" content="light" />
-        <meta name="creator" content="codebloglab.website" />
-        <meta name="publisher" content="codebloglab.website" />
+        <meta name="creator" content="muzblogs.vercel.app" />
+        <meta name="publisher" content="muzblogs.vercel.app" />
         {/* og */}
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="codebloglab.website" />
+        <meta property="og:site_name" content="muzblogs.vercel.app" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="600" />
@@ -68,8 +68,8 @@ export default function RootLayout({
         />
         {/* twitter */}
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:creator" content="@codebloglab" />
-        <meta property="twitter:domain" content="codebloglab.website" />
+        <meta name="twitter:creator" content="@muzblogs" />
+        <meta property="twitter:domain" content="muzblogs.vercel.app" />
         <meta
           name="ahrefs-site-verification"
           content="234939215ab82c4e0069a4dfb6f90dcda6f5777af678e3dffac7654efdddbf42"

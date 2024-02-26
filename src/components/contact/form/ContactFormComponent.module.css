@@ -1,0 +1,11 @@
+.input {
+  @apply bg-none outline-none rounded-none mb-5 p-4 block w-full text-base font-normal leading-6 text-gray-400 border-2 border-solid border-gray-100;
+}
+
+.textarea {
+  @apply bg-none outline-none rounded-none mb-5 p-4 block w-full text-base font-normal leading-6 text-gray-400 border-2 border-solid border-gray-100 h-24;
+}
+
+.button {
+  @apply md:px-10 w-full block text-center px-4 md:py-4 py-3 bg-red-400 text-white rounded-md mr-4 font-bold hover:bg-white hover:outline hover:outline-red-400 hover:text-red-400 hover:outline-2;
+}

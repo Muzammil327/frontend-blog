@@ -38,7 +38,7 @@
           @apply hidden lg:flex lg:gap-x-12;
   
           a {
-            @apply text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600;
+            @apply text-sm font-semibold leading-6 text-gray-900 hover:text-red-600;
           }
         }
       }
@@ -53,7 +53,7 @@
             @apply relative rounded-full px-3 py-1 text-sm leading-6;
   
             a {
-              @apply font-semibold text-indigo-600;
+              @apply font-semibold text-red-600;
   
               span {
                 @apply absolute inset-0;

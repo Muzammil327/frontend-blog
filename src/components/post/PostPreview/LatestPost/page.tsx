@@ -1,23 +1,29 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { PostCard } from "@/src/types/post/page";
+import ImageComponent from "../../../elements/ImageComponent/page";
 
+export interface Article {
+  tagslug: string;
+  authorslug: string;
+  id: string;
+  date: string;
+  title: string;
+  slug: String;
+  para: string;
+  cat: string;
+  author: string;
+  tag: string;
+  catslug: string;
+}
 interface Iprops {
-  datas: PostCard;
+  datas: Article;
 }
 
-export default function LatestPostPreview({ datas }: Iprops) {
+export default function PostCard({ datas }: Iprops) {
   return (
-    <div className="card">
+    <div className="postcard">
       <div className="img">
-        <Image
-          src="/h.png"
-          alt="hjkh"
-          width={500}
-          height={500}
-          className="mb-2"
-        />
+        <ImageComponent src="/h.png" alt="hjkh" width={500} height={500} />
         <div className="cat">
           <a href={`/catgeory/${datas.catslug}`}>{datas.cat}</a>
         </div>
@@ -32,7 +38,8 @@ export default function LatestPostPreview({ datas }: Iprops) {
 
         <div className="inner">
           <a href={`/author/${datas.authorslug}`}>
-            <span>by </span>{datas.author}
+            <span>by </span>
+            {datas.author}
           </a>
           <span>{datas.date}</span>
         </div>
