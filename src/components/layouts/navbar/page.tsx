@@ -43,7 +43,7 @@ export default function Navbar() {
             <div className="logo">
               <Link href="/">
                 <span>Your Company</span>
-                <Image src="/logo/logo.WEBP" alt="Logo" height={86} width={335} className='h-12 w-auto'/>
+                <Image src="/logo/logo.webp" priority alt="Logo" height={86} width={335} className='h-12 w-auto'/>
               </Link>
             </div>
             <div className="menubutton">
