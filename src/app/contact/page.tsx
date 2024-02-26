@@ -25,7 +25,7 @@ export default function Page() {
     <>
       <main>
         <Hero title="Contact Us" />
-        <ContactForm />
+        {/* <ContactForm /> */}
       </main>
     </>
   );
