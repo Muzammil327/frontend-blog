@@ -43,7 +43,7 @@ export default function Navbar() {
             <div className="logo">
               <Link href="/">
                 <span>Your Company</span>
-                <Image src="/logo/logo.png" alt="Logo" height={86} width={335} className='h-12 w-auto'/>
+                <Image src="/logo/logo.WEBP" alt="Logo" height={86} width={335} className='h-12 w-auto'/>
               </Link>
             </div>
             <div className="menubutton">
@@ -72,7 +72,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Muzammil</span>
-                <Image src="/logo/logo.png" alt="Logo" height={86} width={335} className='h-12 w-auto'/>
+                <Image src="/logo/logo.webp" alt="Logo" height={86} width={335} className='h-12 w-auto'/>
               </Link>
               <button
                 type="button"
