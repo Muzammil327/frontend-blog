@@ -1,0 +1,76 @@
+.footer {
+    .upper {
+        @apply pt-10;
+
+        .social {
+            @apply w-full;
+
+            ul {
+                @apply grid grid-cols-4;
+
+                li {
+                    a {
+                        @apply c text-white lg:py-20 md:py-16 sm:py-12 py-8;
+
+                        .icon {
+                            @apply c text-3xl pr-2;
+                        }
+
+                        .text {
+                            @apply md:block hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .inner {
+        @apply bg-black md:pt-20 pt-10;
+        .widgets {
+            @apply mb-4;
+            h6 {
+                @apply text-white text-xl font-semibold f my-6;
+            }
+            ul {
+                @apply flex flex-col gap-4;
+                li{
+                    a{
+                        @apply text-white hover:t2;
+                    }
+                }
+            }
+        }
+        .footerarea {
+            @apply bg4 b md:py-4 py-3 md:mt-20 mt-10;
+
+            .footerarea-inner {
+                @apply b md:flex-row flex-col;
+
+                .copyright {
+                    span {
+                        @apply text-white md:text-base text-sm;
+
+                        a {
+                            @apply text-white hover:t2 pl-1;
+                        }
+                    }
+                }
+
+                .menu {
+                    ul {
+                        @apply flex gap-4;
+
+                        li {
+                            a {
+                                @apply text-white md:text-sm text-xs hover:t2 pl-1;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}

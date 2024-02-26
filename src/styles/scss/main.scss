@@ -1,0 +1,104 @@
+@import './tailwindCSS/tailwind.scss';
+
+@import '../../components/layouts/subHeader/subheader.scss';
+@import '../../components/layouts/navbar/header.scss';
+@import '../../components/layouts/footer/footer.scss';
+
+@import '../../components/post/PostPreview/card.scss';
+@import '../../components/ads/ads.scss';
+@import '../../app/posts/article.scss';
+@import '../../components/author/team/team.scss';
+@import '../../components/catgeory/card/cardCat.scss';
+@import '../../components/tags/card/tagcard.scss';
+@import '../../components/post/rightPost/rightpost.scss';
+
+@layer components {
+
+    .bg-facebook {
+        background-color: #3b5999;
+    }
+
+    .bg-twitter {
+        background-color: #00acee;
+    }
+
+    .bg-youtube {
+        background-color: #f50000;
+    }
+
+    .bg-instagram {
+        background: linear-gradient(15deg, #ffb13d, #dd277b, #4d5ed4);
+}
+
+.bg1 {
+    background-color: #f63a3a;
+}
+
+.bg2 {
+    background-color: #EFF0F4;
+}
+
+.bg3 {
+    background-color: rgba(255, 255, 255, 0.158);
+}
+.bg4 {
+    background-color: #111111;
+}
+
+.t1 {
+    color: #161618;
+}
+
+.t2 {
+    color: #f63a3a;
+}
+
+.t3 {
+    color: #EFF0F4;
+}
+
+.t4 {
+    color: #979797;
+}
+
+.t5 {
+    color: #fff;
+}
+
+.t6 {
+    color: #929090;
+}
+
+.f {
+    font-family: 'Inter', Arial, sans-serif;
+}
+}
+
+@layer components {
+    .c {
+        @apply flex items-center justify-center;
+    }
+
+    .b {
+        @apply flex items-center justify-between;
+    }
+}
+
+@layer components {
+    .button {
+        @apply focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-base font-semibold h-12 px-6 rounded-lg flex items-center pointer-events-auto bg1;
+    }
+
+    .input {
+        @apply block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600;
+    }
+
+    .label {
+        @apply peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6;
+    }
+    .transition-one{
+        transition-duration: 0.5s; /* Adjust the duration as needed */
+        transition-timing-function: ease; /* Adjust the timing function as needed */
+    }
+}
+

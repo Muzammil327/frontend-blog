@@ -1,0 +1,65 @@
+
+
+.box:hover {
+    box-shadow: 15px 15px 13px rgba($color: #555, $alpha: 0.3);
+    transition: .4s;
+    transform: translate(-1%, -1%);
+}
+
+.box {
+    position: relative;
+    height: 200px;
+    box-shadow: 3px 3px 10px rgba($color: #555, $alpha: 0.5);
+    border-radius: 8px;
+    margin-bottom: 7%;
+    transition: 1s;
+
+    a:hover .box__title {
+        height: 35%;
+        transition: 1s;
+
+        p {
+            opacity: 1;
+        }
+    }
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .box__title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 25%;
+        @apply bg-red-200 text-black text-xl font-bold;
+        border-radius: 0 0 8px 8px;
+        vertical-align: middle;
+        transition: .5s;
+        transition-timing-function: ease-out;
+
+        p {
+            opacity: 0;
+            text-align: center;
+            font-size: .8em;
+            margin: 0;
+            transition-delay: .2s;
+            transition: .2s;
+            transition-timing-function: ease-out;
+        }
+
+        h6 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: .9em;
+            @apply my-3;
+        }
+    }
+}
+
+

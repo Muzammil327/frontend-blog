@@ -1,0 +1,58 @@
+.catcard {
+    @apply grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7 justify-center;
+
+    .catcard-inner {
+        @apply max-w-sm shadow-xl relative card rounded-md overflow-hidden;
+
+        .img {
+            @apply relative;
+
+            .shape-divider-bottom {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                overflow: hidden;
+                line-height: 0;
+                transform: scaleX(-1);
+                svg {
+                    position: relative;
+                    display: block;
+                    width: calc(183% + 1.3px);
+                    height: 80px;
+                    transform: rotateY(180deg);
+                  }
+                .shape-fill {
+                    fill: #FFFFFF;
+                }
+            }
+        }
+
+        .tags {
+            @apply absolute bottom-4 px-4;
+
+            span {
+                @apply text-sm text-gray-500 -mb-1 block;
+            }
+
+            h2 {
+                @apply text-xl text-red-400;
+            }
+        }
+
+        a {
+            span {
+                @apply absolute top-0 right-0 bg-red-100 cursor-pointer z-50 w-full h-full flex justify-center items-center;
+                opacity: 0;
+                transition: 0.5s ease-in-out;
+                svg {
+                    @apply h-16 w-16 text-black cursor-pointer;
+                }
+            }
+        }
+
+        &:hover a span {
+            opacity: 0.8;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.subheader {
+    @apply bg1 py-1;
+
+    .inner {
+        @apply flex items-center justify-between;
+
+        .link {
+            ul {
+                @apply flex lg:gap-6 md:gap-4 gap-3;
+
+                li {
+                    a {
+                        @apply text-white hover:text-black transition-all md:text-base text-sm;
+                    }
+                }
+            }
+        }
+
+        .social {
+            ul {
+                @apply flex gap-4;
+
+                li {
+                    a {
+                        @apply text-white hover:text-black transition-all md:text-base text-sm;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,83 @@
+  
+  .header {
+    .navbar {
+      @apply absolute inset-x-0 top-0 z-50;
+  
+      nav {
+        @apply flex items-center md:justify-start justify-between py-2;
+  
+        .logo {
+          @apply flex mr-10;
+  
+          a {
+            @apply -m-1.5 p-1.5;
+  
+            span {
+              @apply sr-only;
+            }
+          }
+        }
+  
+        .menubutton {
+          @apply flex lg:hidden;
+  
+          button {
+            @apply -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700;
+  
+            span {
+              @apply sr-only;
+            }
+  
+            .icon {
+              @apply h-6 w-6;
+            }
+          }
+        }
+  
+        .menu {
+          @apply hidden lg:flex lg:gap-x-12;
+  
+          a {
+            @apply text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600;
+          }
+        }
+      }
+    }
+  
+    .hero {
+      .text {
+        .firstPart {
+          @apply hidden sm:mb-8 sm:flex sm:justify-center;
+  
+          .inner {
+            @apply relative rounded-full px-3 py-1 text-sm leading-6;
+  
+            a {
+              @apply font-semibold text-indigo-600;
+  
+              span {
+                @apply absolute inset-0;
+              }
+            }
+          }
+        }
+  
+        .secondPart {
+          @apply text-center;
+  
+          h1 {
+            @apply text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl capitalize;
+          }
+  
+          p {
+            @apply mt-6 text-lg leading-8 text-gray-600;
+          }
+  
+          .btn-group {
+            @apply mt-10 flex items-center justify-center gap-x-6;
+          }
+        }
+      }
+    }
+  }
+  
