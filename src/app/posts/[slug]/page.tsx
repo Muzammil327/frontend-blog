@@ -42,7 +42,7 @@ const PostPage = (props: any) => {
           <div className="grid lg:grid-cols-8 grid-cols-1 lg:gap-6">
             <div className="md:col-span-6">
               <div className="my-6">
-                <h2 className="md:text-3xl text-2xl t1 font-bold capitalize">
+                <h2 className="md:text-3xl sm:text-2xl text-xl t1 font-bold capitalize">
                   {post?.data.title}
                 </h2>
                 <div className="flex mt-1">

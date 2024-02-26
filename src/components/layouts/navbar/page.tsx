@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import { useState, useEffect } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -35,11 +35,16 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // Function to handle closing the mobile menu
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  }
+
   return (
     <section className={`header ${scrolling ? 'header-scrolled' : ''}`}>
       <div className={`navbar mt-9 ${scrolling ? 'navbar-fixed' : ''}`}>
         <Container>
-          <nav aria-label="Global" >
+          <nav aria-label="Global">
             <div className="logo">
               <Link href="/">
                 <span>Your Company</span>
@@ -54,7 +59,7 @@ export default function Navbar() {
             </div>
             <div className="menu">
               {navigation.map((item: Slug) => (
-                <Link key={item.name} href={item.href}>
+                <Link key={item.name} href={item.href} onClick={closeMobileMenu}>
                   {item.name}
                 </Link>
               ))}
@@ -90,6 +95,7 @@ export default function Navbar() {
                     <Link
                       key={item.name}
                       href={item.href}
+                      onClick={closeMobileMenu} // Call closeMobileMenu function when a link is clicked
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
