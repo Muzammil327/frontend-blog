@@ -39,34 +39,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: 'https://www.mindbenderquiz.com/class',
+      url: 'https://www.muzblogs.vercel.app/catgeory',
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.5,
+      priority: 0.8,
     },
     {
-      url: 'https://www.mindbenderquiz.com/class/9th',
+      url: 'https://www.muzblogs.vercel.app/posts',
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.5,
+      priority: 0.8,
     },
     {
-      url: 'https://www.mindbenderquiz.com/class/9th/books',
+      url: 'https://www.muzblogs.vercel.app/tag',
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.5,
-    },
-    {
-      url: 'https://www.mindbenderquiz.com/class/9th/books/punjab',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.5,
-    },
-    {
-      url: 'https://www.mindbenderquiz.com/class/9th/books/sindh',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.5,
+      priority: 0.8,
     },
   ]
 }
