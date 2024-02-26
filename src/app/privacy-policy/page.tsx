@@ -21,9 +21,9 @@ const data = {
 };
 export default function Page() {
   return (
-    <>
+    <main>
       <Hero title="Privacy Policy" />
-    </>
+    </main>
   );
 }
 

@@ -8,7 +8,7 @@ export default function LeftPost() {
 
   return (
     <>
-      <div className="grid grid-cols-1">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {postMetadata.slice(11, 18).map((data: PostCard) => (
           <div key={data.id}>
             <LPostPreview datas={data} key={data.id}/>

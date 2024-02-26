@@ -10,7 +10,7 @@ export default function LatestPost() {
   return (
     <Container>
       <h2 className="md:my-4 my-2 py-2 md:text-3xl text-xl font-semibold border-y-2 border-solid border-gray-200 ">Latest Posts</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
         
         {postMetadata.slice(5, 11).map((data: PostCard) => (
           <div key={data.id}>

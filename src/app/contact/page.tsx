@@ -23,12 +23,13 @@ const data = {
 export default function Page() {
   return (
     <>
-      <Hero title="Contact Us" />
-      <ContactForm />
+      <main>
+        <Hero title="Contact Us" />
+        <ContactForm />
+      </main>
     </>
   );
 }
-
 
 export const metadata: Metadata = {
   title: data.title,

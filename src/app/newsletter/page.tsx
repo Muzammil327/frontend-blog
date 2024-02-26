@@ -23,7 +23,7 @@ const data = {
 };
 export default function Page() {
   return (
-    <>
+    <main>
       <Hero title="Our Newsletter" />
       {/* <Container>
         <div className="newsletter">
@@ -65,7 +65,7 @@ export default function Page() {
           </div>
         </div>
       </Container> */}
-    </>
+    </main>
   );
 }
 
