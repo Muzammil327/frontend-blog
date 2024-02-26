@@ -16,7 +16,7 @@ article {
     }
 
     a {
-        @apply t2 hover:t1 transition-all;
+        @apply t2 hover:t1 transition-all border-[1px] border-dotted border-black;
     }
 
     pre {
