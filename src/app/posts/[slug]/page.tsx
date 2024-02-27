@@ -84,7 +84,7 @@ export async function generateMetadata(props: any) {
     description: post?.data.para,
     // keywords: data.keywords,
     alternates: {
-      canonical: `blogs/${slug}`,
+      canonical: `posts/${slug}`,
     },
     robots: {
       index: true,
@@ -97,7 +97,7 @@ export async function generateMetadata(props: any) {
     openGraph: {
       title: post?.data.title,
       description: post?.data.para,
-      url: `blogs/${slug}`,
+      url: `posts/${slug}`,
       images: [
         {
           // url: data.image,

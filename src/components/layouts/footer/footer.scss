@@ -27,20 +27,25 @@
 
     .inner {
         @apply bg-black md:pt-20 pt-10;
+
         .widgets {
             @apply mb-4;
+
             h6 {
                 @apply text-white text-xl font-semibold f my-6;
             }
+
             ul {
                 @apply flex flex-col gap-4;
-                li{
-                    a{
+
+                li {
+                    a {
                         @apply text-white hover:t2;
                     }
                 }
             }
         }
+
         .footerarea {
             @apply bg4 b md:py-4 py-3 md:mt-20 mt-10;
 
@@ -74,3 +79,6 @@
         }
     }
 }
+
+
+
