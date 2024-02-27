@@ -1,9 +1,28 @@
 import React from "react";
+import Link from "next/link";
 import Container from "@/src/components/elements/container/page";
 import Hero from "@/src/components/hero/page";
-import { FaGit, FaGitSquare, FaHtml5, FaJs } from "react-icons/fa";
+import { FaGitSquare, FaHtml5, FaJs } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa6";
-import Link from "next/link";
+import type { Metadata } from "next";
+
+const datas = {
+  title: "Courses || MuzBlogs",
+  description:
+    "MuzBlogs is educational website.i am a full stack developer engineer with javascript and phython along with cutting edge technology.",
+  canonical: "/course",
+  index: true,
+  follow: true,
+  image: "/opengraph-image.jpg",
+  url: "https://muzblogs.vercel.app/course",
+  keywords: [
+    "course",
+    "muzblogs course",
+    "blog with muzammil course",
+    "muzammil blog course",
+    "muzammil with blog course",
+  ],
+};
 
 export default function page() {
   return (
@@ -16,11 +35,11 @@ export default function page() {
             <>
               <div className="course-card w-full sm:m-2 bg-white rounded-3xl h-[350]">
                 <Link href={`/course/${data.link}`}>
-                <div
-                  className={`course-card-img w-full h-[225px] flex items-center justify-center ${data.color}`}
-                >
-                  <div className="main text-9xl text-white">{data.icon}</div>
-                </div>
+                  <div
+                    className={`course-card-img w-full h-[225px] flex items-center justify-center ${data.color}`}
+                  >
+                    <div className="main text-9xl text-white">{data.icon}</div>
+                  </div>
                 </Link>
                 <div className="p-4 flex flex-col items-center justify-center ">
                   <h4 className="font-semibold">{data.title}</h4>
@@ -42,7 +61,7 @@ const data = [
     para: "HTML5 is a markup language used for structuring.",
     icon: <FaHtml5 />,
     color: "bg-[#feb548]",
-    link:"html"
+    link: "html",
   },
   {
     id: 2,
@@ -50,7 +69,7 @@ const data = [
     para: "Cascading Style Sheets is a style sheet language.",
     icon: <FaCss3 />,
     color: "bg-[#fe5a48]",
-    link:"css"
+    link: "css",
   },
   {
     id: 3,
@@ -58,7 +77,7 @@ const data = [
     para: "Programming Language and Core Technology.",
     icon: <FaJs />,
     color: "bg-[#29ff00]",
-    link:"javascript"
+    link: "javascript",
   },
   {
     id: 4,
@@ -66,6 +85,42 @@ const data = [
     para: "Distributed Version Control System.",
     icon: <FaGitSquare />,
     color: "bg-[#00ff95]",
-    link:"git-and-github"
+    link: "git-and-github",
   },
 ];
+
+export const metadata: Metadata = {
+  title: datas.title,
+  description: datas.description,
+  keywords: datas.keywords,
+  openGraph: {
+    title: datas.title,
+    description: datas.description,
+    url: datas.url,
+    images: [
+      {
+        url: datas.image,
+        alt: datas.title,
+      },
+    ],
+  },
+  alternates: {
+    canonical: datas.canonical,
+  },
+  robots: {
+    index: datas.index,
+    follow: datas.follow,
+    googleBot: {
+      index: datas.index,
+      follow: datas.follow,
+    },
+  },
+  twitter: {
+    title: datas.title,
+    description: datas.description,
+    images: {
+      url: datas.image,
+      alt: datas.title,
+    },
+  },
+};
