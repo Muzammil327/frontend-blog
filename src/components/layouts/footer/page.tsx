@@ -75,7 +75,7 @@ export default function Page() {
             <div className="footerarea-inner">
               <div className="copyright">
                 <span>
-                  Copyright © 2023 <span className="sm:block hidden">All rights reserved </span>| by
+                  Copyright © 2023 <span className="sm:inline-block hidden">All rights reserved </span>| by
                   <Link href="/" title="Muzammil Safdar" rel="dofollow">
                     Muzammil Safdar
                   </Link>
