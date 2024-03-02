@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 import ViewHome from "@/src/view/home/page";
 
 const data = {
-  title: "MuzBlogs || Tech Blogs",
+  title: "TechBlogCode || Latest Technology",
   description:
     "MuzBlogs provides programming solutions, tips, and latest techniques to optimize your code and tackle common coding challenges.",
   canonical: "/",
   index: true,
   follow: true,
   image: "/opengraph-image.jpg",
-  url: "https://muzblogs.vercel.app/",
+  url: "https://techblogcode.vercel.app/",
   keywords: [
     "muzblogs",
     "blog with muzammil",
