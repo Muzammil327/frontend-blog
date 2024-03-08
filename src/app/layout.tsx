@@ -5,17 +5,17 @@ import PageProvider from "../components/provider/page";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MuzBlogs",
+  title: "Muz Mentor",
   description:
-    "Main purpose of MindBender is to empowering through education and technical skills. Dive into study and technical work for personal and professional growth.",
+    "Main purpose of Muz Mentor is to empowering through education and technical skills. Dive into study and technical work for personal and professional growth.",
   keywords: ["Next.js", "React", "JavaScript"],
   openGraph: {
-    title: "MuzBlogs",
-    description: "MuzBlogs",
+    title: "Muz Mentor",
+    description: "Muz Mentor",
   },
-  metadataBase: new URL("https://muzblogs.vercel.app"),
+  metadataBase: new URL("https://muzmentor.vercel.app"),
   twitter: {
-    title: "MuzBlogs",
+    title: "Muz Mentor",
     description: "The React Framework for the Web",
   },
 };
@@ -30,16 +30,16 @@ export default function RootLayout({
       <head>
         <meta name="application-name" content="Next.js" />
         <meta name="author" content="Muhammad Muzammil Safdar" />
-        <link rel="author" href="https://muzblogs.vercel.app/" />
+        <link rel="author" href="https://muzmentor.vercel.app/" />
         <meta name="generator" content="Next.js" />
         <meta name="keywords" content="Next.js,React,JavaScript" />
         <meta name="referrer" content="origin-when-cross-origin" />
         <meta name="color-scheme" content="light" />
-        <meta name="creator" content="muzblogs.vercel.app" />
-        <meta name="publisher" content="muzblogs.vercel.app" />
+        <meta name="creator" content="muzmentor.vercel.app" />
+        <meta name="publisher" content="muzmentor.vercel.app" />
         {/* og */}
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="muzblogs.vercel.app" />
+        <meta property="og:site_name" content="muzmentor.vercel.app" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="600" />
@@ -68,8 +68,8 @@ export default function RootLayout({
         />
         {/* twitter */}
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:creator" content="@muzblogs" />
-        <meta property="twitter:domain" content="muzblogs.vercel.app" />
+        <meta name="twitter:creator" content="@muzmentor" />
+        <meta property="twitter:domain" content="muzmentor.vercel.app" />
         <meta
           name="ahrefs-site-verification"
           content="95f3550772b63229279ca631721b0e1043947f6997958c0d956af12e0b96ddb7"

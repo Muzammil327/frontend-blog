@@ -18,7 +18,7 @@ export default function Page() {
         <Container>
           <div className="grid md:grid-cols-3 gap-4">
             <div className="widgets">
-              <h6>Important Links</h6>
+              <h5>Important Links</h5>
               <ul>
                 <li>
                   <Link href="/">Home</Link>
@@ -41,7 +41,7 @@ export default function Page() {
               </ul>
             </div>
             <div className="widgets">
-              <h6>Catgeory</h6>
+              <h5>Catgeory</h5>
               <ul className="!grid !grid-cols-2 !gap-4 ">
                 {uniqueCategories.slice(0, 12).map((category, index) => (
                   <li key={category}>
@@ -61,7 +61,7 @@ export default function Page() {
               </ul>
             </div>
             <div className="widgets">
-              <h6>Resources</h6>
+              <h5>Resources</h5>
               <ul>
                 <li>
                   <Link href="/team">Our Team</Link>
@@ -84,13 +84,6 @@ export default function Page() {
               <div className="menu">
                 <ul>
                   <li>
-                    <Link href="/">Home</Link>
-                  </li>
-                  <li>
-                    <Link href="/about">About Us</Link>
-                  </li>
-                  <li>
-                    <Link href="/contact">Contact Us</Link>
                   </li>
                 </ul>
               </div>
