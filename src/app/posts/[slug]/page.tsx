@@ -6,6 +6,7 @@ import Container from "@/src/components/elements/container/page";
 import RightPost from "@/src/components/post/rightPost/page";
 import Hero from "@/src/components/hero/page";
 import Image from "next/image";
+import BannerImageComponent from "@/src/components/elements/BannerImageComponent/page";
 
 const getPostContent = (slug: string, directories: string[]) => {
   for (const directory of directories) {
@@ -46,14 +47,20 @@ const PostPage = (props: any) => {
                 {/* <h2 className="md:text-3xl sm:text-2xl text-xl t1 font-bold capitalize">
                   {post?.data.title}
                 </h2> */}
-                <Image
+                <BannerImageComponent
+                  src={post?.data.image}
+                  alt={post?.data.title}
+                  height={1260}
+                  width={2240}
+                />
+                {/* <Image
                   src={post?.data.image}
                   alt={post?.data.title}
                   title={post?.data.title}
                   height={500}
                   width={500}
                   className="w-full h-auto"
-                />
+                /> */}
                 <div className="flex mt-1">
                   <p className="t4">
                     by{" "}
