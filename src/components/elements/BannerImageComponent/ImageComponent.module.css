@@ -31,3 +31,10 @@
     transform: rotate(360deg);
   }
 }
+
+.img {
+  @apply w-full h-auto lg:block hidden;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  object-fit: cover;
+}

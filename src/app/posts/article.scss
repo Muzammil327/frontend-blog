@@ -12,6 +12,9 @@ article {
 
     img {
         @apply mb-2;
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        object-fit: cover;
     }
 
     a {
