@@ -47,8 +47,8 @@ const PostPage = (props: any) => {
                 <BannerImageComponent
                   src={post?.data.image}
                   alt={post?.data.title}
-                  height={1260}
-                  width={2240}
+                  height={882}
+                  width={1568}
                 />
                 <div className="flex mt-1">
                   <p className="t4">
