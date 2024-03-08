@@ -18,7 +18,7 @@ export default function Page() {
         <Container>
           <div className="grid md:grid-cols-3 gap-4">
             <div className="widgets">
-              <h6>Resources</h6>
+              <h6>Important Links</h6>
               <ul>
                 <li>
                   <Link href="/">Home</Link>
