@@ -1,4 +1,7 @@
 article {
+    h2 {
+        @apply text-[24px] py-2 text-red-500 border-y-2 border-solid border-red-500;
+    }
     h3 {
         @apply text-[22px] pt-3 text-red-500;
     }

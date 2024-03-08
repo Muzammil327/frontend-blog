@@ -16,7 +16,7 @@ JavaScript arrays are important data structures that help in efficiently organiz
 
 An array in JavaScript is a type of object that stores multiple values under a single variable name. These values, known as elements, can be of any data type (numbers, strings, objects, or even other arrays). JavaScript arrays are dynamic and can change in size as elements are added or removed.
 
-### Declare an array in JavaScript
+## Declare an array in JavaScript
 
 To declare an array in JavaScript, simply use square brackets `[]`, enclosing the list of elements separated by commas. Here's a basic example:
 
