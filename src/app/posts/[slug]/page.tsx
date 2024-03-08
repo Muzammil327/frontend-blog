@@ -44,23 +44,12 @@ const PostPage = (props: any) => {
           <div className="grid lg:grid-cols-8 grid-cols-1 lg:gap-6">
             <div className="md:col-span-6">
               <div className="my-6">
-                {/* <h2 className="md:text-3xl sm:text-2xl text-xl t1 font-bold capitalize">
-                  {post?.data.title}
-                </h2> */}
                 <BannerImageComponent
                   src={post?.data.image}
                   alt={post?.data.title}
                   height={1260}
                   width={2240}
                 />
-                {/* <Image
-                  src={post?.data.image}
-                  alt={post?.data.title}
-                  title={post?.data.title}
-                  height={500}
-                  width={500}
-                  className="w-full h-auto"
-                /> */}
                 <div className="flex mt-1">
                   <p className="t4">
                     by{" "}

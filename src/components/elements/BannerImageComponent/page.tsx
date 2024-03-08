@@ -38,6 +38,7 @@ const BannerImageComponent: React.FC<ImageComponentProps> = ({
         className="w-full h-auto"
         onLoad={handleImageLoad} // Call handleImageLoad when the image has loaded
         onError={() => setLoading(false)} // Handle error by setting loading to false
+        priority
       />
     </div>
   );
