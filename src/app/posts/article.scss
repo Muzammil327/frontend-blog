@@ -4,11 +4,7 @@ article {
     }
 
     h4 {
-        @apply text-xl pt-3 text-black;
-    }
-
-    h5 {
-        @apply text-lg py-3 text-red-500;
+        @apply text-xl pt-3 text-red-500;
     }
 
     img {
