@@ -10,5 +10,6 @@ export interface PostCard {
     cat:string,
     author:string,
     tag:string,
+    image:string,
     catslug:string,
 }
