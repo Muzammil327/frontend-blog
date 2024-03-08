@@ -9,6 +9,7 @@ tag: "tag1"
 tagslug: "tag-1"
 author: "Muzammil"
 authorslug: "muzammil"
+image: "/opengraph-image.jpg"
 ---
 
 "Cloud computing" plays a vital role in the creation of software products and services. It's also one of the most highly sought-after skills in the tech industry.

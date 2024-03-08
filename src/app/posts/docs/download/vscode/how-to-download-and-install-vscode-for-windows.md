@@ -9,6 +9,7 @@ tag: "vscode"
 tagslug: "vscode"
 author: "Muzammil"
 authorslug: "muzammil"
+image: "/opengraph-image.jpg"
 ---
 
 In this blog post, we'll explore the basics of **how to download and install [vscode](https://code.visualstudio.com/) for windows**.

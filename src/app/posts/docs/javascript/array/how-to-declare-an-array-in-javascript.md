@@ -9,6 +9,7 @@ tag: "array"
 tagslug: "array"
 author: "Muzammil"
 authorslug: "muzammil"
+image: "/opengraph-image.jpg"
 ---
 
 JavaScript arrays are important data structures that help in efficiently organizing and manipulating data collections. Arrays are ordered collections that can hold zero or more data types. They use numbered indices starting from 0 to access specific items.
@@ -69,6 +70,5 @@ In modern JavaScript, it's recommended to use `let or const` instead of var for 
 JavaScript arrays are an important feature that allow developers to store and manipulate data collections efficiently.
 
 
-* [How to declare an array in JavaScript?](https://aws.amazon.com/getting-started/)
 * [Free YouTube videos](https://www.youtube.com/watch?v=ubCNZRNjhyo)
 * [Udemy Courses](https://www.udemy.com/course/aws-certified-developer-associate/)

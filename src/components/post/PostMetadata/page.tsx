@@ -40,6 +40,7 @@ const PostMetadata = (): PostCard[] => {
       author: matterResult.data.author,
       authorslug: matterResult.data.authorslug,
       slug: path.basename(filePath, ".md"),
+      image: matterResult.data.image,
     };
   });
 

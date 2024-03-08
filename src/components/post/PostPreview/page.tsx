@@ -14,6 +14,7 @@ export interface Article {
   author: string;
   tag: string;
   catslug: string;
+  image: string;
 }
 interface Iprops {
   datas: Article;
@@ -23,7 +24,7 @@ export default function PostCard({ datas }: Iprops) {
   return (
     <div className="postcard">
       <div className="img">
-        <ImageComponent src="/h.png" alt="hjkh" width={500} height={500} />
+        <ImageComponent src={datas.image} alt="hjkh" width={500} height={500} />
         <div className="cat">
           <a href={`/catgeory/${datas.catslug}`}>{datas.cat}</a>
         </div>

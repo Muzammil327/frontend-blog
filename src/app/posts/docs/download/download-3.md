@@ -6,6 +6,7 @@ date: "2020-12-27"
 cat: "music"
 tag: "tag7"
 author: "Imrans"
+image: "/opengraph-image.jpg"
 ---
 
 "Cloud computing" plays a vital role in the creation of software products and services. It's also one of the most highly sought-after skills in the tech industry.

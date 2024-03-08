@@ -1,14 +1,4 @@
 ---
-# id: "9"
-# title: "What is an array in javascript."
-# para: "JavaScript arrays are used to manage data structures effectively. Their implementation and usage in JavaScript programming is significant."
-# date: "15-02-2024"
-# cat: "Javascript"
-# catslug: "javascript"
-# tag: "array"
-# tagslug: "array"
-# author: "Muzammil"
-# authorslug: "muzammil"
 id: "0"
 title: "How to download and install Git for windows"
 para: "JavaScript arrays are used to manage data structures effectively. Their implementation and usage in JavaScript programming is significant."
@@ -19,6 +9,7 @@ tag: "git"
 tagslug: "git"
 author: "Muzammil"
 authorslug: "muzammil"
+image: "/opengraph-image.jpg"
 ---
 
 JavaScript arrays are important data structures that help in efficiently organizing and manipulating data collections. 

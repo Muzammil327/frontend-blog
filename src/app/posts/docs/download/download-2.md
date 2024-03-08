@@ -7,6 +7,7 @@ cat: "music"
 catslug: "download"
 tag: "tag2"
 author: "Imran"
+image: "/opengraph-image.jpg"
 ---
 
 "Cloud computing" plays a vital role in the creation of software products and services. It's also one of the most highly sought-after skills in the tech industry.In fact, most of the projects on this site will require cloud interaction of some sort—particularly with AWS's serverless products.
