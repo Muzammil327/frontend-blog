@@ -36,6 +36,7 @@ const BannerImageComponent: React.FC<ImageComponentProps> = ({
         height={height}
         width={width}
         className={styles.img}
+        layout="responsive"
         onLoad={handleImageLoad} // Call handleImageLoad when the image has loaded
         onError={() => setLoading(false)} // Handle error by setting loading to false
         priority
