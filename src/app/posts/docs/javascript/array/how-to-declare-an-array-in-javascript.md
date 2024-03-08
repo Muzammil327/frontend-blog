@@ -9,7 +9,7 @@ tag: "array"
 tagslug: "array"
 author: "Muzammil"
 authorslug: "muzammil"
-image: "/opengraph-image.jpg"
+image: "/opengraph-image.webp"
 ---
 
 JavaScript arrays are important data structures that help in efficiently organizing and manipulating data collections. Arrays are ordered collections that can hold zero or more data types. They use numbered indices starting from 0 to access specific items.
