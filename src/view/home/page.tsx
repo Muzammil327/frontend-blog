@@ -18,7 +18,9 @@ export default function ViewHome() {
         <Container>
           <div className="grid lg:grid-cols-8 grid-cols-1 md:gap-4">
             <div className="md:col-span-6">
-              <LeftPost />
+              <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4 mx-4">
+                <LeftPost />
+              </div>
             </div>
             <div className="md:col-span-2">
               <RightPost />

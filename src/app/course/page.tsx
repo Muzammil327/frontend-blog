@@ -1,10 +1,11 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Link from "next/link";
 import Container from "@/src/components/elements/container/page";
 import Hero from "@/src/components/hero/page";
 import { FaGitSquare, FaHtml5, FaJs } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa6";
 import type { Metadata } from "next";
+import LeftPost from "@/src/components/home/leftPost/page";
 
 const datas = {
   title: "Courses || MuzBlogs",
@@ -24,6 +25,15 @@ const datas = {
   ],
 };
 
+interface Iprops {
+  id: number;
+  title: String;
+  para: String;
+  icon: ReactNode;
+  color: String;
+  link: String;
+}
+
 export default function page() {
   return (
     <>
@@ -31,30 +41,14 @@ export default function page() {
 
       <Container>
         <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4">
-          {data.map((data: any) => (
-            <>
-              <div className="course-card w-full sm:m-2 bg-white rounded-3xl h-[350]">
-                <Link href={`/course/${data.link}`}>
-                  <div
-                    className={`course-card-img w-full h-[225px] flex items-center justify-center ${data.color}`}
-                  >
-                    <div className="main text-9xl text-white">{data.icon}</div>
-                  </div>
-                </Link>
-                <div className="p-4 flex flex-col items-center justify-center ">
-                  <h4 className="font-semibold">{data.title}</h4>
-                  <p className="text-center">{data.para}</p>
-                </div>
-              </div>
-            </>
-          ))}
+          <LeftPost />
         </div>
       </Container>
     </>
   );
 }
 
-const data = [
+const data: Iprops[] = [
   {
     id: 1,
     title: "HTML 5",

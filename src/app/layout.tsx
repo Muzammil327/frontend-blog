@@ -32,7 +32,6 @@ export default function RootLayout({
         <meta name="author" content="Muhammad Muzammil Safdar" />
         <link rel="author" href="https://muzmentor.vercel.app/" />
         <meta name="generator" content="Next.js" />
-        <meta name="keywords" content="Next.js,React,JavaScript" />
         <meta name="referrer" content="origin-when-cross-origin" />
         <meta name="color-scheme" content="light" />
         <meta name="creator" content="muzmentor.vercel.app" />

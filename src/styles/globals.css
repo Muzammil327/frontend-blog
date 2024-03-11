@@ -6,6 +6,8 @@
 button {
   @apply outline-none;
 }
+
+
 body {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;

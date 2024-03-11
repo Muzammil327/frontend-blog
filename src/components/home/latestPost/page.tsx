@@ -6,7 +6,6 @@ import LatestPostPreview from "@/src/components/post/PostPreview/LatestPost/page
 
 export default function LatestPost() {
   const postMetadata = PostMetadata();
-console.log(postMetadata)
   return (
     <Container>
       <h2 className="md:my-4 my-2 py-2 md:text-3xl text-xl font-semibold border-y-2 border-solid border-gray-200 ">Latest Posts</h2>

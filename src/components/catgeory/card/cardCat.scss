@@ -1,54 +1,31 @@
 .catgeorycard {
-    @apply grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7 justify-center;
-  
-    .inner {
-      @apply shadow-xl relative rounded-md overflow-hidden;
-  
-      .img {
-        @apply relative;
-  
-        .shape-divider {
-          transform: scaleX(-1);
-          @apply absolute bottom-0 left-0 w-full overflow-hidden leading-[0];
-  
-          svg {
-            width: calc(183% + 1.3px);
-            transform: rotateY(180deg);
-            @apply relative block h-20;
-  
-            .shape-fill {
-              fill: #ffffff;
-            }
-          }
-        }
-      }
-  
-      .tags {
-        @apply absolute bottom-4 px-4;
-  
-        span {
-          @apply text-sm text-gray-500 -mb-1 block;
-        }
-  
-        h2 {
-          @apply text-xl text-red-400;
-        }
-      }
-  
-      a {
-        span {
-          @apply absolute opacity-0 top-0 right-0 bg-red-100 cursor-pointer w-full h-full flex justify-center items-center;
-          transition: 0.5s ease-in-out;
-  
-          svg {
-            @apply h-16 w-16 text-black cursor-pointer;
-          }
-        }
-      }
-  
-      &:hover a span {
-        opacity: 0.8;
+  @apply grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7 justify-center;
+
+  .inner {
+    @apply shadow-xl bg-black text-white relative rounded-md overflow-hidden py-4 px-4;
+
+    .tags {
+
+      @apply flex justify-between items-center;
+
+      h2 {
+        @apply text-xl py-2 capitalize;
       }
     }
+
+    a {
+      span {
+        @apply absolute opacity-0 top-0 py-4 right-0 bg-red-100 cursor-pointer w-full h-full flex justify-center items-center;
+        transition: 0.5s ease-in-out;
+
+        svg {
+          @apply h-16 w-16 text-black cursor-pointer;
+        }
+      }
+    }
+
+    &:hover a span {
+      opacity: 0.8;
+    }
   }
-  
+}
