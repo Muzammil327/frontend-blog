@@ -24,8 +24,13 @@ const datas = {
 export default function CatgeoryCard() {
   return (
     <>
-      <h1>CSS-3</h1>
-      <Form params={datas.url} />
+      <div className="md:grid md:grid-cols-9 grid-cols-12">
+        <MenuLeft />
+        <div className="md:col-span-7 mt-24 md:px-8">
+          <h1>CSS-3</h1>
+          <Form params={datas.url} />
+        </div>
+      </div>
     </>
   );
 }

@@ -3,19 +3,19 @@ import type { Metadata } from "next";
 import ViewHome from "@/src/view/home/page";
 
 const data = {
-  title: "Muz Mentor Blogs",
+  title: "Muzammil Mentor Blogs",
   description:
-    "Muz Mentor provides programming solutions, tips, and latest techniques to optimize your code and tackle common coding challenges.",
+    "Muzammil Mentor provides programming solutions, tips, and latest techniques to optimize your code and tackle common coding challenges.",
   canonical: "/",
   index: true,
   follow: true,
   image: "/opengraph-image.jpg",
-  url: "https://muzmentor.vercel.app/",
+  url: "https://muzammilmentor.com/",
   keywords: [
-    "muzmentor",
-    "blog with muzammil",
-    "muzammil blog",
-    "muzammil with blog",
+    "Muzammil Mentor Blogs",
+    "Blogs Muzammil",
+    "Mentor Blogs",
+    "Muzammil Blogs",
   ],
 };
 

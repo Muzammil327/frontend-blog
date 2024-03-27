@@ -2,6 +2,8 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
+import MenuLeft from "../menuleft/page";
+import Container from "@/src/components/elements/container/page";
 import Form from "@/src/components/layouts/form/page";
 
 const getPostContent = (slug: string, directories: string[]) => {
@@ -19,31 +21,38 @@ const getPostContent = (slug: string, directories: string[]) => {
   return null;
 };
 
-const directories = ["src/app/course/docs/css"];
+const directories = ["src/app/course/docs/next-auth"];
 const PostPage = (props: any) => {
   const slug = props.params.slug;
-  const url = "http://localhost:3000/course/css/" + props.params.slug;
+  const url = "http://localhost:3000/course/next-auth/" + props.params.slug;
   const post = getPostContent(slug, directories);
   return (
     <>
-      <div className="">
-        <div className="flex mt-1">
-          <p className="t4">
-            by <span className="text-[#ff89ba]">{post?.data.author}</span>
-            <span className="text-[#ff89ba]">{post?.data.keyword}</span>
-          </p>
-          <span className="mx-1">-</span>
-          <p className="t4"> {post?.data.date}</p>
-        </div>
+      <div className="md:grid md:grid-cols-9 grid-cols-12">
+        <MenuLeft />
+        <div className="md:col-span-7 mt-24 md:px-6 px-4">
+          <div className="">
+            <div className="">
+              <div className="flex mt-1">
+                <p className="t4">
+                  by <span className="text-[#ff89ba]">{post?.data.author}</span>
+                  <span className="text-[#ff89ba]">{post?.data.keyword}</span>
+                </p>
+                <span className="mx-1">-</span>
+                <p className="t4"> {post?.data.date}</p>
+              </div>
 
-        <article className="prose">
-          <Markdown>{post?.content || ""}</Markdown>
-          <p className="py-6">
-            Thanks for reading. Share, and subscribe to my blog for future
-            updates. Feel free to leave any questions or comments below!
-          </p>
-        </article>
-        <Form params={url} />
+              <article className="prose">
+                <Markdown>{post?.content || ""}</Markdown>
+                <p className="py-6">
+                  Thanks for reading. Share, and subscribe to my blog for future
+                  updates. Feel free to leave any questions or comments below!
+                </p>
+              </article>
+              <Form params={url} />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Muz Mentor",
     description: "Muz Mentor",
   },
-  metadataBase: new URL("https://muzmentor.vercel.app"),
+  metadataBase: new URL("https://muzammilmentor.com"),
   twitter: {
     title: "Muz Mentor",
     description: "The React Framework for the Web",

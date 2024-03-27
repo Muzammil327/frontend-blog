@@ -81,6 +81,22 @@ const data: Iprops[] = [
     color: "bg-[#00ff95]",
     link: "git-and-github",
   },
+  {
+    id: 5,
+    title: "Git Github",
+    para: "Distributed Version Control System.",
+    icon: <FaGitSquare />,
+    color: "bg-[#00ff95]",
+    link: "git-and-github",
+  },
+  {
+    id: 6,
+    title: "Git Github",
+    para: "Distributed Version Control System.",
+    icon: <FaGitSquare />,
+    color: "bg-[#00ff95]",
+    link: "git-and-github",
+  },
 ];
 
 export const metadata: Metadata = {

@@ -25,6 +25,9 @@ const getPostContent = (slug: string, directories: string[]) => {
 
 // Example usage
 const directories = [
+  "src/app/posts/docs/nextjs/",
+
+  "src/app/posts/docs/download",
   "src/app/posts/docs/download/vscode",
   "src/app/posts/docs/download/git",
   "src/app/posts/docs/download/nodejs",
@@ -63,8 +66,7 @@ const PostPage = (props: any) => {
               <article className="prose">
                 <Markdown>{post?.content || ""}</Markdown>
                 <p className="py-6">
-                  Thanks for reading. Share, and subscribe to my blog for future
-                  updates. Feel free to leave any questions or comments below!
+                  Thanks for reading.
                 </p>
               </article>
             </div>
@@ -87,6 +89,7 @@ export async function generateMetadata(props: any) {
   return {
     title: post?.data.title,
     description: post?.data.para,
+    keywords: post?.data.keyword,
     // keywords: data.keywords,
     alternates: {
       canonical: `posts/${slug}`,

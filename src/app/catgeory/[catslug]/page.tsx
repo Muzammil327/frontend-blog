@@ -13,10 +13,11 @@ export const generateStaticParams = async () => {
 
 function Page({ params }: { params: { catslug: string } }) {
   const postMetadata = PostMetadata();
-
+  const data = params.catslug;
+  let textWithoutHyphens = data.replace(/-/g, " ");
   return (
     <>
-      <Hero title={params.catslug} />
+      <Hero title={textWithoutHyphens} />
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-12 ">
           {postMetadata
@@ -33,12 +34,15 @@ function Page({ params }: { params: { catslug: string } }) {
 export default Page;
 
 export async function generateMetadata(props: any) {
-  const slug = props.params.slug
+  const slug = props.params.catslug;
+
   function capitalize(str: string) {
-    return str.charAt(0).toUpperCase() + str.slice(1)
+    return str.charAt(0).toUpperCase() + str.slice(1);
   }
 
-  const title = capitalize(props.params.catslug)
+  let textWithoutHyphens = slug.replace(/-/g, " ");
+  const title = capitalize(textWithoutHyphens);
+
   return {
     title: title,
     // description: post?.data.para,
@@ -73,5 +77,5 @@ export async function generateMetadata(props: any) {
         alt: title,
       },
     },
-  }
+  };
 }

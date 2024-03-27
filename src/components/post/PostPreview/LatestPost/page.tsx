@@ -37,7 +37,7 @@ export default function PostCard({ datas }: Iprops) {
         </Link>
 
         <div className="inner">
-          <a href={`/author/${datas.authorslug}`}>
+          <a href={`/team/${datas.authorslug}`}>
             <span>by </span>
             {datas.author}
           </a>

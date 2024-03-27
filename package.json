@@ -20,7 +20,8 @@
     "react-dom": "^18",
     "react-icons": "^4.12.0",
     "sass": "^1.71.1",
-    "typescipt": "^1.0.0"
+    "typescipt": "^1.0.0",
+    "vercel": "^33.5.5"
   },
   "devDependencies": {
     "@types/node": "^20",

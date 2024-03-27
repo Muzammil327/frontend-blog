@@ -1,6 +1,6 @@
 article {
     h2 {
-        @apply text-[24px] py-2 text-red-500 border-y-2 border-solid border-red-500;
+        @apply lg:text-2xl text-xl py-2 text-red-500 border-y-[1px] border-solid border-red-500;
     }
     h3 {
         @apply text-[22px] pt-3 text-red-500;
@@ -23,15 +23,15 @@ article {
 
     pre {
         code {
-            @apply bg-slate-200 py-1 px-2 rounded text-base w-full flex items-center min-h-10 lg:overflow-hidden overflow-x-scroll;
+            @apply bg-slate-200 py-1 px-2 my-2 rounded text-base w-full flex items-center min-h-10 lg:overflow-hidden overflow-x-scroll;
         }
     }
 
     p {
-        @apply text-lg py-3;
+        @apply text-base py-3;
 
         code {
-            @apply bg-red-200 rounded py-1 px-2;
+            @apply bg-red-200 text-base rounded py-1 px-1;
         }
     }
 

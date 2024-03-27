@@ -31,7 +31,7 @@ export default function LHeroPostPreview({ datas }: Iprops) {
         </Link>
 
         <div className="inner">
-          <a href={`/author/${datas.authorslug}`} >
+          <a href={`/team/${datas.authorslug}`} >
             <span className="!text-gray-400">by </span>{datas.author}
           </a>
           <span className="!text-gray-400">{datas.date}</span>

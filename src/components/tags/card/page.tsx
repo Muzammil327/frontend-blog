@@ -7,7 +7,8 @@ export default function TagCard() {
   const postMetadata = PostMetadata();
   const uniqueCategories = [...new Set(postMetadata.map((item) => item.tag))];
   const uniqueTagSlug = [...new Set(postMetadata.map((item) => item.tagslug))];
-
+console.log("uniqueTagSlug:", uniqueTagSlug)
+console.log("uniqueCategories:", uniqueCategories)
   return (
     <>
       <Container>
