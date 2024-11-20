@@ -1,119 +1,123 @@
 article {
-    h2 {
-        @apply lg:text-2xl text-xl py-2 text-red-500 border-y-[1px] border-solid border-red-500;
+  h2 {
+    @apply lg:text-2xl text-xl py-2 text-red-500 border-y-[1px] border-solid border-red-500;
+  }
+  h3 {
+    @apply text-[22px] pt-3 text-red-500;
+  }
+
+  h4 {
+    @apply text-xl pt-3 text-red-500;
+  }
+
+  img {
+    @apply mb-2;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  a {
+    @apply t2 hover:t1 transition-all border-b-[1px] border-dotted border-black;
+  }
+
+  pre {
+    code {
+      @apply bg-slate-200 py-1 px-2 my-2 rounded text-base w-full flex items-center min-h-10 lg:overflow-hidden overflow-x-scroll;
     }
-    h3 {
-        @apply text-[22px] pt-3 text-red-500;
+  }
+
+  p {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    word-spacing: 2px;
+    font-weight: 400;
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+
+    code {
+      @apply bg-red-200 text-base rounded py-1 px-1;
+    }
+  }
+
+  ul {
+    @apply flex flex-wrap;
+
+    li {
+      @apply mt-1 mr-2;
+
+      a {
+        @apply hover:bg1 font-normal text-sm px-3 h-7 bg2 flex items-center t1 hover:text-white transition-all rounded;
+      }
+    }
+  }
+
+  table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    table-layout: fixed;
+    @apply md:border-0 m-0 p-0 w-full my-3;
+
+    tr {
+      background-color: #f8f8f8;
+      border: 1px solid #ddd;
+      padding: 0.35em;
     }
 
-    h4 {
-        @apply text-xl pt-3 text-red-500;
+    th,
+    td {
+      padding: 0.625em;
+      border-right: 1px solid #ddd;
     }
 
-    img {
-        @apply mb-2;
-        aspect-ratio: 16 / 9;
-        width: 100%;
-        object-fit: cover;
+    th {
+      font-size: 0.85em;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-right: 1px solid #ddd;
     }
 
-    a {
-        @apply t2 hover:t1 transition-all border-b-[1px] border-dotted border-black;
-    }
+    @media screen and (max-width: 600px) {
+      thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
 
-    pre {
-        code {
-            @apply bg-slate-200 py-1 px-2 my-2 rounded text-base w-full flex items-center min-h-10 lg:overflow-hidden overflow-x-scroll;
-        }
-    }
+      tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: 0.625em;
+      }
 
-    p {
-        @apply text-base py-3;
+      td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 0.8em;
+        text-align: left;
+      }
 
-        code {
-            @apply bg-red-200 text-base rounded py-1 px-1;
-        }
-    }
-
-    ul {
-        @apply flex flex-wrap;
-
-        li {
-            @apply mt-1 mr-2;
-
-            a {
-                @apply hover:bg1 font-normal text-sm px-3 h-7 bg2 flex items-center t1 hover:text-white transition-all rounded;
-            }
-        }
-    }
-
-    table {
-        border: 1px solid #ccc;
-        border-collapse: collapse;
-        table-layout: fixed;
-        @apply md:border-0 m-0 p-0 w-full my-3;
-
-        tr {
-            background-color: #f8f8f8;
-            border: 1px solid #ddd;
-            padding: .35em;
-        }
-
-        th,
-        td {
-            padding: .625em;
-            border-right: 1px solid #ddd;
-        }
-
-        th {
-            font-size: .85em;
-            letter-spacing: .1em;
-            text-transform: uppercase;
-            border-right: 1px solid #ddd;
-        }
-
-        @media screen and (max-width: 600px) {
-
-
-            thead {
-                border: none;
-                clip: rect(0 0 0 0);
-                height: 1px;
-                margin: -1px;
-                overflow: hidden;
-                padding: 0;
-                position: absolute;
-                width: 1px;
-            }
-
-            tr {
-                border-bottom: 3px solid #ddd;
-                display: block;
-                margin-bottom: .625em;
-            }
-
-            td {
-                border-bottom: 1px solid #ddd;
-                display: block;
-                font-size: .8em;
-                text-align: left;
-            }
-
-            td::before {
-                /*
+      td::before {
+        /*
               * aria-label has no advantage, it won't be read inside a table
               content: attr(aria-label);
               */
-                content: attr(data-label);
-                float: left;
-                font-weight: bold;
-                text-transform: uppercase;
-            }
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
 
-            td:last-child {
-                border-bottom: 0;
-            }
-        }
+      td:last-child {
+        border-bottom: 0;
+      }
     }
-
+  }
 }
